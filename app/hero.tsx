@@ -1,46 +1,11 @@
-import {
-	StrapiImage,
-	StrapiMedia,
-	StrapiVideo,
-} from '@/components/strapi-image';
-import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRightIcon, ChevronDownIcon, TriangleDownIcon } from '@radix-ui/react-icons';
-import { FragmentType, graphql, useFragment } from '@/gql';
-import { NavList, ServicesDropdown } from '@/components/services-dropdown';
-import { NavRoot } from '@/components/nav-root';
-import NavLinks from '@/components/nav-links';
 //import background from "../public/wjoqa-assets/wjo_hero_video_a0c1348607.mp4"
 import logo from "../public/wjo_white_small_08953aa280.png"
 import GlideComponent from './glide1';
 
 
-const Hero_queryFragment = graphql(`
-	fragment Hero_query on Query {
-		...ServicesDropdown_query
-		...Navigation_query
-		navigation {
-			logo {
-				...Upload
-			}
-		}
-		homepage {
-			subtitle
-			logo {
-				...Upload
-			}
-			background {
-				...Upload
-			}
-		}
-	}
-`);
-
-export type HeroProps = {
-	data: FragmentType<typeof Hero_queryFragment>;
-};
-
-export function Hero({ data }: HeroProps) {
+export function Hero({ data }) {
 	//const hero = useFragment(Hero_queryFragment, data);
 
 	//if (!hero.homepage) {

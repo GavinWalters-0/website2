@@ -1,51 +1,7 @@
-import { graphql, useFragment } from '@/gql';
-import gql from './request';
 import { Hero } from './hero';
-import { Footer } from '@/components/footer';
-import { H2, H3, P } from '../components/prose';
-//import { Clients } from './clients';
-import { Partners } from '@/gavin/react_components/partners';
-import { FeaturedProjects } from './featured-projects';
-import Link from 'next/link';
-import { ArrowRightIcon } from '@radix-ui/react-icons';
-import { Contact } from './contact';
-import Column from '@/components/column';
-import { FormPopup } from '@/components/form/popup';
 export const dynamic = 'force-dynamic';
 
-
-import { Clients } from '@/gavin/react_components/clients';
-
-import { ContentBlock } from '@/components/content-block';
-
 import Image from 'next/image';
-
-import phone0 from "@/app/phone-icon.svg"
-import phone1 from "@/app/phone-calling-icon.svg"
-
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-
-import GlideComponent from './glide1';
-
-import HoverToScroll from './HoverToScroll';
-
-const homepageQuery = graphql(`
-	query Homepage {
-		homepage {
-			...Clients
-			...FeaturedProjects
-			...Contact
-
-			mission_statement
-		}
-		...Partners_query
-		...Hero_query
-		...Footer_query
-	}
-`);
-
 
 import React from 'react';
 
@@ -203,7 +159,7 @@ export default async function Home() {
 		<div className="flex flex-col items-center">
 		 	<Hero data={{}} />
 		 	<div className='w-screen h-screen'>
-		 		<App />
+		 		<App/>
 		 	</div>
 		</div>
 	);
