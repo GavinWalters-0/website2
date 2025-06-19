@@ -114,7 +114,7 @@ function App() {
           title="CONTROLS" 
         />
         <PhotoCard 
-          PhotoSrc="/vans.jpg" 
+          PhotoSrc="/vans1.jpg" 
           title="SERVICE" 
         />
         <VideoCard 
