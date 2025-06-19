@@ -1,0 +1,21 @@
+.triggerZone {
+  padding: 40px;
+  background-color: #0070f3;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.triggerZone:hover {
+  transform: scale(1.02);
+}
+
+.targetSection {
+  padding: 60px;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}

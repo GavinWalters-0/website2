@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@theme {
+
+  --color-wjo: #007244;
+  --color-wjo-dark2: #265a3a;
+  --color-wjo-dark: #022517;
+  --color-wjo-dim: #5D736A;
+
+  --font-knile: "Knile", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.card1_disable {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.card2_disable {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.card3 {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+@font-face {
+  font-family: Aileron;
+  src: url(/Aileron-Thin.otf);
+}
+
+@font-face {
+  font-family: archivo-med;
+  src: url(/Archivo-Medium.otf);
+}
+
+@font-face {
+  font-family: archivo-regular;
+  src: url(/Archivo-Regular.otf);
+}
+@font-face {
+  font-family: archivo-light;
+  src: url(/Archivo_Condensed-Light.ttf);
+}
+
+p {
+  font-family: Aileron;
+}
+
+h2 {
+  font-family: knile;
+  color: white;
+}
+
+

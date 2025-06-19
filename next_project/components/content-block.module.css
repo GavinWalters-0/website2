@@ -1,0 +1,12 @@
+.two-column ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    column-gap: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .two-column ul {
+        grid-template-columns: 1fr;
+    }
+}
